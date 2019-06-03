@@ -31,7 +31,7 @@ public class UsuarioConverter implements Converter {
     public Object getAsObject(FacesContext facesContext, UIComponent uiComponent, String s) {
         Usuario usuario = new Usuario();
         try{
-            if(!s.equals("null")){
+            if(s!= null && !s.equals("null") && !s.equals("")){
                Usuario b = new Usuario();
                b.setUsername(s);
                Optional<Usuario> optional = usuarioRepository.findById(b);
