@@ -31,7 +31,7 @@ public class RolConverter implements Converter {
     public Object getAsObject(FacesContext facesContext, UIComponent uiComponent, String s) {
         Rol rol = new Rol();
         try{
-            if(!s.equals("null")){
+            if(s!= null && !s.equals("null") && !s.equals("")){
                Rol b = new Rol();
                b.setIdrol(s);
                Optional<Rol> optional = rolRepository.findById(b);
