@@ -16,7 +16,7 @@ public class Usuario {
     private String celular;
     private String cargo;
     private String email;
-    @Referenced(documment = "Rol",
+    @Referenced(collection = "Rol",
             field = "idrol", javatype = "String", lazy = false,
             repository = "com.crudejb.repository.RolRepository")
     private List<Rol> rol;
