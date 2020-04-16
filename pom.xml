@@ -29,12 +29,12 @@
          <dependency>
             <groupId>com.github.avbravo</groupId>
             <artifactId>jmoordbutils</artifactId>
-            <version>0.14</version>
+            <version>0.84</version>
         </dependency>
         <dependency>
             <groupId>com.github.avbravo</groupId>
             <artifactId>jmoordb</artifactId>
-            <version>0.36</version>
+            <version>0.55</version>
         </dependency>
     </dependencies>
 
